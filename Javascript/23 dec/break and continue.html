@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     
+    <script>
+        function stopFunction(){
+            start = document.getElementById("start").value;
+            end = document.getElementById("end").value;
+            stop = document.getElementById("stop").value;
+            // print list
+
+            start = +start
+            end = +end
+            for (let i = start; i <= end; i++) {
+                if (i == stop) {
+                    break;
+                }
+                document.getElementById("result").innerHTML += "<li>" + i + "</li>";
+            }
+        }
+    </script>
+</head>
+<body>
+    start <input type="text" id="start">
+    end <input type="text" id="end">
+    stop <input type="text" id="stop">
+    <button onclick="stopFunction()">print</button>
+
+    
+    <ul id="result"></ul>
+
+</body>
+</html>

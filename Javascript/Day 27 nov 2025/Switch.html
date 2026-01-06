@@ -41,13 +41,13 @@
             <label for="num1" class="form-label">Number 1:</label>
             <input type="number" class="form-control" id="num1">
         </div>
-         <div class="mb-3">
-            <label for="operator" class="form-label">Select Operator:</label>
+        <div class="mb-3">
+            <label for="operator" class="form-label">Operator:</label>
             <select class="form-control" id="operator">
-                <option value="Addition">Addition</option>
-                <option value="Substraction">Subtraction</option>
-                <option value="Multiplication">Multiplication</option>
-                <option value="Division">Division</option>
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
             </select>
         </div>
         <div class="mb-3">
@@ -55,7 +55,7 @@
             <input type="number" class="form-control" id="num2">
         </div>
         <button class="btn btn-primary" onclick="print_result()">Calculate</button>
-        <div class="mt-3">
+        <div class="mb-3 mt-3">
             <label for="result" class="form-label">Result:</label>
             <input type="text" class="form-control" id="result" readonly>
         </div>
