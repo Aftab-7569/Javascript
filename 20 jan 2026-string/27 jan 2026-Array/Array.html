@@ -10,12 +10,21 @@
 <body>
     <script>
 
-        data = ['apple', 'banana', 'cherry', 'date', 'elderberry'];
+        data = ['apple', 'banana', 'cherry'];
 
         // document.write(data[0]+'<br>');
 
-        // print all element using a loop
-        f
+        // print all elements using a loop
+        for (let i = 0; i < data.length; i++) {
+            document.write(data[i] + '<br>');
+        }
+
+        // add a new element to the array
+        data.push('date');
+        document.write('After adding date:<br>');
+
+        document.write(data, '<br>')
+
 
     </script>
 </body>
